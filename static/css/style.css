@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.portrait-section {
+    background-color: #E5E5E5;
+    color: #222831;
+}
+.skills-section {
+    background-color: #30475E;
+    color: #E5E5E5;
+}
+.contacts-section {
+    background-color: #E5E5E5;
+    color: #30475E;
+}
+.footer-section {
+    background-color: #222831;
+    color: #E5E5E5;
+}
