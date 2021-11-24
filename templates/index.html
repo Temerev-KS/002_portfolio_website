@@ -25,18 +25,28 @@
 </head>
 <body>
     <!-- Portrait :) -->
-    <div class="container-fluid">
+{#    <div class="container-fluid">#}
 
-        <div class="row">
-            <div class="col-lg-10 col-md-10 mx-auto">
-                <div class="portrait-section">
-                    <h1>Kirill Temerev</h1>
-                    <div>ks.temerev@gmail.com</div>
-            </div>
+        <div class="container-fluid">
+            <div class="portrait-section">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <img src="static/img/portrait.png" alt="x/v" class="img-fluid rounded-circle avatar">
+                        <h1>Kirill Temerev</h1>
+                        <div>ks.temerev@gmail.com</div>
+                    </div>
+                </div>
             </div>
         </div>
         
+    <div class="container-fluid">
+        <div class="separator">
+            <img src="static/img/separator_grb/center_bar_xl.svg">
+        </div>
+
     </div>
+        
+
     
     
     
@@ -54,6 +64,13 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="separator">
+            <img src="static/img/separator_brg/center_bar_xl.svg">
+        </div>
+
+    </div>
+
 
     <!-- Contacts -->
 
@@ -66,15 +83,50 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="separator">
+
+{#            <div class="row position-relative">#}
+
+{#                <div class="col">#}
+{#                    <img src="static/img/separator_grd/left_wisp_xl.svg" class="float-start">#}
+{#                </div>#}
+                <div class="col">
+                    <img src="static/img/separator_grd/center_bar_xl.svg">
+{#                    <span class="image fill" data-position="center"><img src="static/img/separator_grd/center_bar_xl.svg" alt="" /></span>#}
+                </div>
+{#                <div class="col">#}
+{#                    <img src="static/img/separator_grd/right_wisp_xl.svg" class="float-end">#}
+{#                </div>#}
+
+
+{#
+            <div class="row">
+                <div class="col-md-1"><img src="static/img/separator_grd/left_wisp_xl.svg">
+                    <div class="col-md-8">
+                        <img src="static/img/separator_grd/center_bar_xl.svg" class="img-fluid">
+                    </div>
+                    <div class="col-md-1">
+                        <img src="static/img/separator_grd/right_wisp_xl.svg" class="">
+                    </div>
+#}
+{#                </div>#}
+            </div>
+
+        </div>
+
+    </div>
+
+
 
     <!-- Footer -->
 
     <div class="container-fluid">
         <div class="footer-section">
             <div>{{ current_date }}</div>
-            <div>Temerev Kirill</div>
+            <div>Kirill Temerev</div>
         </div>
     </div>
-
+{#    </div>#}
 </body>
 </html>

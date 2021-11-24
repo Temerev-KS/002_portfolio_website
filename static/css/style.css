@@ -1,6 +1,27 @@
 body {
     font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
+
+.container-fluid {
+    padding: 0;
+}
+
+
+.separator img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
 
 
 .portrait-section {
@@ -18,4 +39,11 @@ body {
 .footer-section {
     background-color: #222831;
     color: #E5E5E5;
+}
+
+@media (max-width: 797px) {
+    body {
+    padding-left: 0;
+    padding-right: 0;
+}
 }
