@@ -5,25 +5,6 @@ body {
     text-align: center;
 }
 
-.container-fluid {
-    padding: 0;
-}
-
-
-.separator img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-
-
-
-
-
-
-
-
 .portrait-section {
     background-color: #E5E5E5;
     color: #222831;
@@ -39,6 +20,60 @@ body {
 .footer-section {
     background-color: #222831;
     color: #E5E5E5;
+}
+.skill-icon {
+    width: 3em;
+    position: relative;
+    display: inline;
+    margin: 2em 0.5em;
+}
+
+
+
+.skill-name {
+    position: relative;
+    display: inline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns:  repeat(3, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 20%;
+}
+.hardware-skill {
+    grid-row: 1;
+    grid-column: 1;
+}
+.team-management-skill {
+    grid-row: 1;
+    grid-column: 2;
+}
+.networks-skill {
+    grid-row: 1;
+    grid-column: 3;
+}
+.software-development-skill {
+    grid-row: 2;
+    grid-column: 1;
+}
+.systems-skill {
+    grid-row: 2;
+    grid-column: 2;
+}
+.design-skill {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+
+
+.separator img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-repeat: repeat-x;
 }
 
 @media (max-width: 797px) {

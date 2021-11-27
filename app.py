@@ -13,9 +13,9 @@ def hello_world():  # put application's code here
     )
 
 
-@app.route('/bootstrap')
+@app.route('/strapless')
 def bootstrap_page():
-    return render_template('base.html')
+    return render_template('index_strapless.html')
 
 
 if __name__ == '__main__':
