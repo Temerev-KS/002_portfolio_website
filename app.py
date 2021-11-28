@@ -15,7 +15,10 @@ def hello_world():  # put application's code here
 
 @app.route('/strapless')
 def bootstrap_page():
-    return render_template('index_strapless.html')
+    return render_template(
+        'index_strapless.html',
+        current_date=date.today().year
+    )
 
 
 if __name__ == '__main__':
