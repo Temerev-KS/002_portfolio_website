@@ -1,12 +1,11 @@
 from flask import Flask, render_template, redirect
-from flask_bootstrap import Bootstrap
 from datetime import date
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():  # put application's code here
+def index():
     return render_template(
         'index.html',
         current_date=date.today().year
