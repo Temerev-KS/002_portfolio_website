@@ -23,8 +23,6 @@ body {
 .skills-section {
     background-color: var(--main-color-blue);
     color: var(--main-color-light);
-    padding-left: clamp(2rem, 8rem, 20rem);
-    padding-right: clamp(1rem, 2rem, 3rem);
 }
 .contacts-section {
     background-color: var(--main-color-light);
@@ -37,29 +35,53 @@ body {
 
 
 
-.skills-vertical-flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 .skills-grid-container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 100%;
     grid-template-columns:  repeat(3, 1fr);
-    grid-row-gap: 20%;
     grid-column-gap: 5%;
     align-items: center;
     justify-content: center;
+    padding: 9em 3em 9em clamp(7vw, 5vw, 4vw);
 }
+
+.skills-vertical-flex-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+
 .skill-card-grid-container{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
     justify-items: left;
 }
+
+.first-column {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.second-column {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.third-column {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    padding-left: 2vw;
+}
+
 .skill-grid-icon {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -67,36 +89,7 @@ body {
     justify-self: end;
     margin-right: 1.2em;
 }
-.hardware-skill {
-    grid-row: 1;
-    grid-column: 1;
-}
-.team-management-skill {
-    grid-row: 1;
-    grid-column: 2;
-}
-.networks-skill {
-    grid-row: 1;
-    grid-column: 3;
-}
-.software-development-skill {
-    grid-row: 2;
-    grid-column: 1;
-}
-.systems-skill {
-    grid-row: 2;
-    grid-column: 2;
-}
-.design-skill {
-    grid-row: 2;
-    grid-column: 3;
-}
 
-.skill-set {
-    position: relative;
-    display: inline-block;
-    padding: 1em;
-}
 .skill-icon {
     width: 3em;
     height: 3.1em; !important
@@ -115,11 +108,8 @@ body {
 
 .separator-flex-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
+
 .separator-left {
     height: 158px;
     width: 119px;
@@ -156,17 +146,6 @@ body {
 }
 
 
-.separator img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    background-repeat: repeat-x;
-}
-.star {
-    /*display: inline;*/
-    /*position: relative;*/
-
-}
 .star-block {
     grid-row: 2;
     grid-column: 2;
