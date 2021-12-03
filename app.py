@@ -13,10 +13,10 @@ def hello_world():  # put application's code here
     )
 
 
-@app.route('/strapless')
+@app.route('/bootstrap')
 def bootstrap_page():
     return render_template(
-        'index_strapless.html',
+        'index-bootstrap.html',
         current_date=date.today().year
     )
 
