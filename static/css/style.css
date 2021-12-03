@@ -33,7 +33,11 @@ body {
     color: var(--main-color-light);
 }
 
-
+.avatar {
+    height: 30vw;
+    width: 30vw;
+    margin: 10vw;
+}
 
 
 
@@ -111,7 +115,42 @@ body {
     display: flex;
 }
 
-.separator-left {
+.separator-left-grb {
+    height: 158px;
+    width: 119px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-self: flex-start;
+    background-image: url('../../static/img/separator_grb/left_wisp_xl.svg');
+    flex-shrink: 0;
+}
+.separator-center-grb {
+    height: 158px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-self: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-image: url('../../static/img/separator_grb/center_bar_xl.svg');
+    background-repeat: repeat-x;
+}
+.separator-right-grb {
+    height: 158px;
+    width: 119px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-self: flex-end;
+    background-image: url('../../static/img/separator_grb/right_wisp_xl.svg');
+    flex-shrink: 0;
+}
+
+.separator-left-brg {
     height: 158px;
     width: 119px;
     min-height: 100%;
@@ -122,7 +161,7 @@ body {
     background-image: url('../../static/img/separator_brg/left_wisp_xl.svg');
     flex-shrink: 0;
 }
-.separator-center {
+.separator-center-brg {
     height: 158px;
     min-height: 100%;
     margin: 0;
@@ -134,7 +173,7 @@ body {
     background-image: url('../../static/img/separator_brg/center_bar_xl.svg');
     background-repeat: repeat-x;
 }
-.separator-right {
+.separator-right-brg {
     height: 158px;
     width: 119px;
     min-height: 100%;
@@ -146,6 +185,43 @@ body {
     flex-shrink: 0;
 }
 
+
+.separator-left-grd {
+    height: 158px;
+    width: 119px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-self: flex-start;
+    background-image: url('../../static/img/separator_grd/left_wisp_xl.svg');
+    flex-shrink: 0;
+}
+
+.separator-center-grd {
+    height: 158px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-self: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-image: url('../../static/img/separator_grd/center_bar_xl.svg');
+    background-repeat: repeat-x;
+}
+
+.separator-right-grd {
+    height: 158px;
+    width: 119px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-self: flex-end;
+    background-image: url('../../static/img/separator_grd/right_wisp_xl.svg');
+    flex-shrink: 0;
+}
 
 .star-block {
     grid-row: 2;
