@@ -44,7 +44,7 @@ body {
     grid-column-gap: 5%;
     align-items: center;
     justify-content: center;
-    padding: 9em 3em 9em clamp(7vw, 5vw, 4vw);
+    padding: 3em 3em 3em clamp(7vw, 5vw, 4vw);
 }
 
 .skills-vertical-flex-container {
@@ -61,6 +61,7 @@ body {
     grid-template-columns: 1fr 3fr;
     align-items: center;
     justify-items: left;
+    margin: 2em 0 3em 0;
 }
 
 .first-column {
