@@ -30,6 +30,9 @@ body {
     background-color: var(--main-color-light);
     color: var(--main-color-blue);
 }
+.contacts-section a {
+    color: var(--main-color-dark);
+}
 .footer-section {
     background-color: var(--main-color-dark);
     color: var(--main-color-light);
@@ -40,19 +43,30 @@ body {
 }
 
 .avatar {
-    height: 22vw;
-    width: 22vw;
-    margin: 7vw 0 3em 0;
+    height: 20%;
+    width: 20%;
+    margin: 7% 0 3em 0;
 }
 
 .contacts-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    align-content: space-between;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 13vw;
+    justify-items: center;
+    grid-column-gap: 2em;
     padding: 5vw 25vw;
+}
+
+.contacts-item {
+    min-width: 10em;
+}
+
+.contacts-item:hover {
+        filter: brightness(0%) saturate(100%) invert(41%) sepia(47%) saturate(3936%) hue-rotate(334deg) brightness(108%) contrast(88%);
+}
+.contact-plate {
+    display: block;
+    margin-top: 1em;
 }
 
 .title {
