@@ -16,6 +16,7 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
+    min-width: 490px;
 }
 
 .portrait-section {
@@ -346,12 +347,21 @@ body {
         padding: 5vw 15vw;
     }
     .skills-grid-container {
-        grid-template-columns: 2fr;
+        display: block;
+        /*grid-template-columns: 1fr 1fr;*/
+    }
+    .skills-vertical-flex-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        /*flex-direction: row;*/
+
     }
     .skill-card-grid-container {
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-items: center;
+        display: block;
+        /*grid-template-columns: 1fr;*/
+        /*align-items: center;*/
+        /*justify-items: center;*/
         margin-top: 1em;
         margin-bottom: 1.5em;
     }
@@ -378,7 +388,8 @@ body {
         display: none;
     }
     .skills-grid-container {
-        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;*/
+    display: block;
     }
     .skill-card-grid-container {
         grid-template-columns: 1fr;
